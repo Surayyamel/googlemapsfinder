@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+.title {
+    position: absolute;
+    z-index: 100;
+    font-size: 80px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    top: 100px;
+    left: 100px;
+
+}
+
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+.search-container {
+    display: flex;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 100;
+    top: 230px;
+    left: 100px;
+    width: 400px;
+    height: 60px;
+    background-color: #454E53;
+    /* transition: all .2s ease-in-out; */
+}
+
+.search-container:hover{
+    /* transform: scale(1.05);  */
+}
+
+.search-container input {
+    width: 100%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.search-container .search {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-container input:focus {
+    outline: none;
+}
+
+.search i {
+    font-size: 25px;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.search i:hover {
+     transform: scale(1.1); 
+     color: rgb(166, 214, 166);
+    }
+
+.stores-list-container {
+    width: 400px;
+    position: absolute;
+    z-index: 100;
+    background-color: rgb(255, 255, 255, 0.6);
+    left: 100px;
+    top: 320px;
+    bottom: 20px;
+    border-radius: 30px;
+    display: flex;
+    overflow-y: hidden;
+    padding-bottom: 30px;
+}
+
+.stores-list {
+    flex-grow: 1;
+    overflow-y: scroll;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.store-address {
+    font-size: 21px;
+    color: #514c4c;
+    margin-top: 30px;
+}
+
+.store-address span {
+    display: block;
+}
+
+.store-phone-number {
+    color: #B5ADAD;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.store-container {
+    border-bottom: 1px solid #979797;
+    display: flex;
+    cursor: pointer;
+
+}
+
+.store-phone-number {
+    font-size: 14px;
+    color: rgb(167, 165, 165);
+}
+
+.store-number {
+    width: 30px;
+    height: 30px;
+    background-color: #454E53;
+    color: #B5ADAD;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-info-container {
+    flex-grow: 1;
+}
+
+
+
+.info-window-container {
+    margin: 5px 5px 5px 5px;
+    
+}
+
+
+.info-window-name {
+    font-size: 21px;
+    color: black;
+    padding-bottom: 5px;
+}
+
+.info-window-name a:hover {
+    color: rgb(68, 177, 109);
+}
+
+.info-window-name a {
+    text-decoration: none;
+    color: black;
+    transition: all .2s ease-in-out;
+}
+
+.status-text {
+    font-size: 14px;
+    color: rgb(167, 165, 165);
+    border-bottom: 1px solid #dbdada;
+    padding-bottom: 3px;
+    margin-bottom: 5px;
+}
+
+.info-window-phone {
+    font-size: 14px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.info-window-address {
+    font-size: 14px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.info-window-address i {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(68, 177, 109);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-window-phone i {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(68, 177, 109);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-window-address span {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.info-window-phone span {
+    padding-left: 8px;
+    padding-right: 8px; 
+}
+
+.search i {
+    cursor: pointer;
+}
+
+.store-container-background {
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    border-radius: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 18px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.store-container-background:hover {
+    background-color: rgb(166, 214, 166, 0.7);
+    transform: scale(1.1);
+}
