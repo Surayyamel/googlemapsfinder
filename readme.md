@@ -1,1 +1,1 @@
-google maps store finder challenge by Clever Programmer
+google maps store finder challenge
